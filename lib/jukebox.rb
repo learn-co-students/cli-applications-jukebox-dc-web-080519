@@ -46,10 +46,13 @@ def run(songs)
     # otherwise check if input is valid command & run appropriate method
     if input.downcase == "help"
       help
+      puts "Please enter a command:"
     elsif input.downcase == "list"
       list(songs)
+      puts "Please enter a command:"
     elsif input.downcase == "play"
       play(songs)
+      puts "Please enter a command:"
     else
       puts "Please enter a valid command: "
     end
